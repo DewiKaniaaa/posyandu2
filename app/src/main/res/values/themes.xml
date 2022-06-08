@@ -23,4 +23,13 @@
     <style name="TextAppearance.Custom.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
         <item name="android:textColor">@color/text_color</item>
     </style>
+
+    <!-- Custom theme text input layout. -->
+    <style name="Widget.Custom.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/text_color</item>
+        <item name="backgroundTint">@color/primary_dark</item>
+    </style>
+    <style name="Widget.Custom.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_color</item>
+    </style>
 </resources>
