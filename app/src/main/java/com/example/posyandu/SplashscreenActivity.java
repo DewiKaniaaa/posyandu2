@@ -17,8 +17,6 @@ public class SplashscreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
-        this.getSupportActionBar().hide();
-
         progressBar = findViewById(R.id.loading);
 
         progressBar.setProgress(value);

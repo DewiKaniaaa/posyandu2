@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".ContainerActivity"
+            android:label="Posyandu Cempaka II"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
@@ -26,8 +30,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:label="Posyandu Cempaka II" />
+            android:exported="false"/>
     </application>
 
 </manifest>

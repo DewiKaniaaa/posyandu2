@@ -17,7 +17,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        this.getSupportActionBar().hide();
 
         loginButton = findViewById(R.id.btn_masuk);
         tvDaftar = findViewById(R.id.tv_daftar);
@@ -31,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                startActivity(new Intent(LoginActivity.this, ContainerActivity.class));
                 finish();
             }
         });

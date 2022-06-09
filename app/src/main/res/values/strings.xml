@@ -6,4 +6,14 @@
     <string name="title_menu">Menu</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="paragraf1">
+        Posyandu Cempaka II merupakan unit layanan kesehatan yang berada di Dusun Jatigede RT 12/RW 05 Desa Cijeungjing Kecamatan Jatigede.
+    </string>
+    <string name="paragraf2">
+        Posyandu bertugas untuk melakukan kegiatan pelayanan kesehatan dengan sasaran utamanya adalah bayi, balita, ibu hamil, dan wanita usia subur. Kegiatan di Posyandu Cempaka II diantaranya penimbangan bayi dan balita, imunisasi serta pemberian vitamin pada bayi dan balita, pemeriksaan pada ibu hamil dan lain-lain.
+    </string>
+    <string name="paragraf3">
+        Aplikasi ini dibangun untuk kebutuhan kegiatan pengelolaan bayi dan balita di posyandu Cempaka II Dusun Jatigede. Dengan dibangunnya aplikasi posyandu ini diharapkan dapat menjadi sarana yang mempermudah kader dan peserta untuk menyimpan data, melakukan absen, melihat perkembangan bayi/balita, melihat laporan serta fitur-fitur lainnya yang menunjang kegitan posyandu di Cempaka II Dusun Jatigede.
+    </string>
 </resources>

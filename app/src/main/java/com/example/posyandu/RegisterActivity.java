@@ -18,7 +18,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        getSupportActionBar().setTitle("Register");
         btnCancel = findViewById(R.id.btn_cancel);
         btnDaftar = findViewById(R.id.btn_daftar);
         tvLogin = findViewById(R.id.tv_login);
