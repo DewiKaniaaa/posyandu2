@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -31,7 +32,14 @@ public class ContainerActivity extends AppCompatActivity {
         bottomNavigationView.inflateMenu(R.menu.bottom_nav_menu);
         fragmentManager = getSupportFragmentManager();
 
-        fragmentManager.beginTransaction().replace(R.id.main_container, new HomeFragment()).commit();
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("USERNAME");
+        if (username.equals("kader")){
+            fragmentManager.beginTransaction().replace(R.id.main_container, new HomeFragment()).commit();
+        }
+        else if (username.equals("peserta")){
+            fragmentManager.beginTransaction().replace(R.id.main_container, new HomePesertaFragment()).commit();
+        }
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -39,7 +47,12 @@ public class ContainerActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 switch (id){
                     case R.id.navigation_home:
-                        fragment = new HomeFragment();
+                        if (username.equals("kader")){
+                            fragment = new HomeFragment();
+                        }
+                        else {
+                            fragment = new HomePesertaFragment();
+                        }
                         break;
                     case R.id.navigation_bayibalita:
                         fragment = new BayiBalitaFragment();
