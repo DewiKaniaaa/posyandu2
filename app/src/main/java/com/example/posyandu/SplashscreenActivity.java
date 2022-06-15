@@ -11,12 +11,14 @@ public class SplashscreenActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private int value=0;
+    SessionManager sessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
+        sessionManager =new SessionManager(getApplicationContext());
         progressBar = findViewById(R.id.loading);
 
         progressBar.setProgress(value);
@@ -30,7 +32,8 @@ public class SplashscreenActivity extends AppCompatActivity {
                     ex.printStackTrace();
                 } finally{
 
-                    startActivity(new Intent(SplashscreenActivity.this, LoginActivity.class));
+                    sessionManager.cekLogin();
+//                    startActivity(new Intent(SplashscreenActivity.this, LoginActivity.class));
                     finish();
                 }
 

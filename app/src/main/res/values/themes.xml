@@ -32,4 +32,11 @@
     <style name="Widget.Custom.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:textColor">@color/text_color</item>
     </style>
+
+    <!-- Custom theme toolbar. -->
+    <style name="Widget.Custom.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/primary_dark</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="popupTheme">@style/Theme.AppCompat.Light</item>
+    </style>
 </resources>

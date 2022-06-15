@@ -7,6 +7,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Shader;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -16,12 +18,23 @@ import com.example.posyandu.ui.kms.KmsFragment;
 import com.example.posyandu.ui.menu.MenuFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.HashMap;
+
 public class ContainerActivity extends AppCompatActivity {
+
 
     private static final String TAG = ContainerActivity.class.getSimpleName();
     private BottomNavigationView bottomNavigationView;
     private Fragment fragment;
     private FragmentManager fragmentManager;
+
+    SessionManager sessionManager;
+    String user;
+    SharedPreferences sharedPreferences;
+    int mode =0;
+
+    private static final String pref_posyandu ="prefPosyandu";
+    private static final String key_username ="keyUsername";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,22 +45,21 @@ public class ContainerActivity extends AppCompatActivity {
         bottomNavigationView.inflateMenu(R.menu.bottom_nav_menu);
         fragmentManager = getSupportFragmentManager();
 
-        Intent intent = getIntent();
-        String username = intent.getStringExtra("USERNAME");
-        if (username.equals("kader")){
+        sharedPreferences = getSharedPreferences(pref_posyandu, mode);
+        user = sharedPreferences.getString(key_username, null);
+        if (user.equals("kader")){
             fragmentManager.beginTransaction().replace(R.id.main_container, new HomeFragment()).commit();
         }
-        else if (username.equals("peserta")){
+        else if (user.equals("peserta")){
             fragmentManager.beginTransaction().replace(R.id.main_container, new HomePesertaFragment()).commit();
         }
-
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 switch (id){
                     case R.id.navigation_home:
-                        if (username.equals("kader")){
+                        if (user.equals("kader")){
                             fragment = new HomeFragment();
                         }
                         else {
@@ -61,7 +73,11 @@ public class ContainerActivity extends AppCompatActivity {
                         fragment = new KmsFragment();
                         break;
                     case R.id.navigation_menu:
-                        fragment = new MenuFragment();
+                        if (user.equals("kader")){
+                            fragment = new MenuFragment();
+                        }else {
+                            fragment = new MenuPesertaFragment();
+                        }
                         break;
                 }
                 final FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

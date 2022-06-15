@@ -35,6 +35,7 @@
         android:rowCount="3">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_kelola_absen"
             android:layout_width="100dp"
             android:layout_height="150dp"
             android:layout_row="0"
@@ -197,6 +198,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_logout"
             android:layout_width="100dp"
             android:layout_height="150dp"
             android:layout_row="2"
