@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 public class MenuPesertaFragment extends Fragment {
 
-    CardView cvLogout;
+    CardView cvLogout, cvKelolaAbsenPeserta;
     SharedPreferences sharedPreferences;
     int mode =0;
 
@@ -36,6 +36,18 @@ public class MenuPesertaFragment extends Fragment {
                 editor.commit();
 
                 Intent i = new Intent(getContext(), LoginActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+                getActivity().finish();
+            }
+        });
+
+        cvKelolaAbsenPeserta = view.findViewById(R.id.cv_kelola_absen_peserta);
+        cvKelolaAbsenPeserta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), KelolaAbsenPesertaActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);

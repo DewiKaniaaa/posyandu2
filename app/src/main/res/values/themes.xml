@@ -36,7 +36,7 @@
     <!-- Custom theme toolbar. -->
     <style name="Widget.Custom.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">@color/primary_dark</item>
-        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
-        <item name="popupTheme">@style/Theme.AppCompat.Light</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
     </style>
 </resources>

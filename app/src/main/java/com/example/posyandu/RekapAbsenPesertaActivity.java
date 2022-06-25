@@ -13,19 +13,18 @@ import android.view.MenuInflater;
 import android.view.View;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
-public class RekapAbsenActivity extends AppCompatActivity {
+public class RekapAbsenPesertaActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    AdapterRvRekapAbsen adapterRvRekapAbsen;
+    AdapterRvRekapAbsenPeserta adapterRvRekapAbsenPeserta;
     RecyclerView.LayoutManager rvLayoutManager;
-    ArrayList<ModelRekapAbsen> data;
+    ArrayList<ModelRekapAbsenPeserta> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rekap_absen);
+        setContentView(R.layout.activity_rekap_absen_peserta);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -36,30 +35,27 @@ public class RekapAbsenActivity extends AppCompatActivity {
             }
         });
 
-        recyclerView = findViewById(R.id.rv_rekap_absen);
+        recyclerView = findViewById(R.id.rv_rekap_absen_peserta);
         recyclerView.setHasFixedSize(true);
         rvLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(rvLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         data = new ArrayList<>();
-        for (int i=0; i < DataRekapAbsen.jadwal.length; i++){
-            data.add(new ModelRekapAbsen(
-                    DataRekapAbsen.jadwal[i],
-                    DataRekapAbsen.tanggal[i],
-                    DataRekapAbsen.status[i]
+        for (int i=0; i < DataRekapAbsenPeserta.jadwal.length; i++){
+            data.add(new ModelRekapAbsenPeserta(
+                    DataRekapAbsenPeserta.jadwal[i],
+                    DataRekapAbsenPeserta.tanggal[i]
             ));
         }
-        adapterRvRekapAbsen = new AdapterRvRekapAbsen(this,data);
-        recyclerView.setAdapter(adapterRvRekapAbsen);
+        adapterRvRekapAbsenPeserta = new AdapterRvRekapAbsenPeserta(this,data);
+        recyclerView.setAdapter(adapterRvRekapAbsenPeserta);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu_rekap_absen, menu);
-//        return true;
 
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_rekap_absen, menu);
+        menuInflater.inflate(R.menu.menu_rekap_absen_peserta, menu);
         SearchView searchView = (SearchView) menu.findItem(R.id.menu_search).getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -70,18 +66,18 @@ public class RekapAbsenActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 newText = newText.toLowerCase();
-                ArrayList<ModelRekapAbsen> itemFilter = new ArrayList<>();
-                for (ModelRekapAbsen modelRekapAbsen : data){
-                    String jadwal = modelRekapAbsen.getJadwal().toLowerCase();
-                    String tanggal = modelRekapAbsen.getTanggal().toLowerCase();
+                ArrayList<ModelRekapAbsenPeserta> itemFilter = new ArrayList<>();
+                for (ModelRekapAbsenPeserta modelRekapAbsenPeserta : data){
+                    String jadwal = modelRekapAbsenPeserta.getJadwal().toLowerCase();
+                    String tanggal = modelRekapAbsenPeserta.getTanggal().toLowerCase();
 
                     if (jadwal.contains(newText)){
-                        itemFilter.add(modelRekapAbsen);
+                        itemFilter.add(modelRekapAbsenPeserta);
                     } else if (tanggal.contains(newText)){
-                        itemFilter.add(modelRekapAbsen);
+                        itemFilter.add(modelRekapAbsenPeserta);
                     }
                 }
-                adapterRvRekapAbsen.setFilter(itemFilter);
+                adapterRvRekapAbsenPeserta.setFilter(itemFilter);
                 return true;
             }
         });

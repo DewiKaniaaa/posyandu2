@@ -8,3 +8,7 @@ Catatan, Tanggal 19 Juni 2022
 - Membuat halaman rekap absen kader
 - Menu pencarian belum jalan
 - Warna icon pencarian harus di ubah warna putih
+
+Catatan, Tanggal 25 Juni 2022
+- Membuat halaman kelola absen kader & peserta selesai
+- Selanjutnya mengerjakan kelola user (menu utama, menu add, menu edit)

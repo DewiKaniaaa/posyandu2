@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".KelolaAbsenPesertaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RekapAbsenPesertaDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RekapAbsenPesertaActivity"
+            android:exported="false" />
+        <activity
             android:name=".RekapAbsenActivity"
             android:exported="false" />
         <activity
