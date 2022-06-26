@@ -9,8 +9,8 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@drawable/bg_login"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_login" />
     <LinearLayout
         android:padding="24dp"
         android:layout_width="match_parent"

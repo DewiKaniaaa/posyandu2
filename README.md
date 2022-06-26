@@ -11,4 +11,9 @@ Catatan, Tanggal 19 Juni 2022
 
 Catatan, Tanggal 25 Juni 2022
 - Membuat halaman kelola absen kader & peserta selesai
-- Selanjutnya mengerjakan kelola user (menu utama, menu add, menu edit)
+- Selanjutnya mengerjakan kelola jadwal(menu utama, menu add, menu edit)
+
+Catatan, Tanggal 26 Juni 2022
+- Membuat halaman kelola jadwal kader (halaman utama, halaman lihat, halaman tambah, halaman edit)
+- Spinner belum bisa otomatis dan custom warnanya belum sesuai
+- Selanjutnya mengerjakan halaman jadwal untuk peserta (halaman utama, halaman lihat) 

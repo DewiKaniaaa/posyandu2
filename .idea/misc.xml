@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/drawable/bg_home.xml" value="0.1195" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/drawable/custom_spinner_bg.xml" value="0.1195" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/drawable/ic_back.xml" value="0.1195" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/drawable/ic_search.xml" value="0.1195" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/drawable/nav_item_color.xml" value="0.1195" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_absen.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_container.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_edit_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_absen_kader.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_absen_peserta.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_jadwal.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_lihat_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_login.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_main.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_register.xml" value="0.20833333333333334" />
@@ -18,18 +22,22 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_rekap_absen_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_rekap_absen_peserta_detail.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_splashscreen.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_tambah_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_bayibalita.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_home_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_kms.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_menu.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_menu_peserta.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_rekap_absen.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_rekap_absen_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_kelola_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_rekap_absen.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_rekap_absen_peserta.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/options_menu.xml" value="0.20833333333333334" />
       </map>
     </option>
   </component>

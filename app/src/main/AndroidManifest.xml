@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".EditJadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahJadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatJadwalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaJadwalActivity"
+            android:exported="false" />
+        <activity
             android:name=".KelolaAbsenPesertaActivity"
             android:exported="false" />
         <activity

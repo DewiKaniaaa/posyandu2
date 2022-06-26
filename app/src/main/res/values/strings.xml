@@ -16,4 +16,10 @@
     <string name="paragraf3">
         Aplikasi ini dibangun untuk kebutuhan kegiatan pengelolaan bayi dan balita di posyandu Cempaka II Dusun Jatigede. Dengan dibangunnya aplikasi posyandu ini diharapkan dapat menjadi sarana yang mempermudah kader dan peserta untuk menyimpan data, melakukan absen, melihat perkembangan bayi/balita, melihat laporan serta fitur-fitur lainnya yang menunjang kegitan posyandu di Cempaka II Dusun Jatigede.
     </string>
+
+    <string-array name="status_jadwal">
+        <item>-- Pilih Status --</item>
+        <item>Selesai</item>
+        <item>Belum Selesai</item>
+    </string-array>
 </resources>
