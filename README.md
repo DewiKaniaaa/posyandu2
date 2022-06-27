@@ -17,3 +17,6 @@ Catatan, Tanggal 26 Juni 2022
 - Membuat halaman kelola jadwal kader (halaman utama, halaman lihat, halaman tambah, halaman edit)
 - Spinner belum bisa otomatis dan custom warnanya belum sesuai
 - Selanjutnya mengerjakan halaman jadwal untuk peserta (halaman utama, halaman lihat) 
+
+Catatan, Tanggal 27 Juni 2022
+- Membuat halaman utama kelola user kader 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KelolaJadwalActivity">
+    tools:context=".KelolaUserKaderActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/toolbar_layout"
@@ -17,13 +17,13 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/ic_back"
-            app:title="Kelola Jadwal"
+            app:title="Kelola User Kader"
             app:titleTextColor="@color/white"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_kelola_jadwal"
+        android:id="@+id/rv_kelola_user_kader"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar_layout"
@@ -31,6 +31,6 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
-        tools:listitem="@layout/list_item_jadwal" />
+        tools:listitem="@layout/list_item_user_kader"/>
 
 </RelativeLayout>

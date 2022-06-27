@@ -11,27 +11,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class RekapAbsenPesertaDetailActivity extends AppCompatActivity {
+public class KelolaUserKaderActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    AdapterRvPeserta adapterRvPeserta;
+    AdapterRvKelolaUserKader adapterRvKelolaUserKader;
     RecyclerView.LayoutManager rvLayoutManager;
-    ArrayList<ModelPeserta> data;
+    ArrayList<ModelKelolaUserKader> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rekap_absen_peserta_detail);
+        setContentView(R.layout.activity_kelola_user_kader);
 
-        Intent intentData = getIntent();
-        String jadwal = intentData.getStringExtra("JADWAL");
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle(jadwal);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,29 +38,29 @@ public class RekapAbsenPesertaDetailActivity extends AppCompatActivity {
             }
         });
 
-        recyclerView = findViewById(R.id.rv_rekap_absen_peserta_detail);
+        recyclerView = findViewById(R.id.rv_kelola_user_kader);
         recyclerView.setHasFixedSize(true);
         rvLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(rvLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         data = new ArrayList<>();
-        for (int i=0; i < DataPeserta.nama.length; i++){
-            data.add(new ModelPeserta(
-                    DataPeserta.nama[i],
-                    DataPeserta.tanggal_lahir[i],
-                    DataPeserta.jenis_kelamin[i],
-                    DataPeserta.no_telepon[i]
+        for (int i=0; i < DataKelolaUserKader.nama.length; i++){
+            data.add(new ModelKelolaUserKader(
+                    DataKelolaUserKader.nama[i],
+                    DataKelolaUserKader.no_telepon[i],
+                    DataKelolaUserKader.jenis_kelamin[i],
+                    DataKelolaUserKader.tanggal_lahir[i]
             ));
         }
-        adapterRvPeserta = new AdapterRvPeserta(this,data);
-        recyclerView.setAdapter(adapterRvPeserta);
+        adapterRvKelolaUserKader = new AdapterRvKelolaUserKader(this,data);
+        recyclerView.setAdapter(adapterRvKelolaUserKader);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.menu_rekap_absen_peserta, menu);
+        menuInflater.inflate(R.menu.menu_kelola_jadwal, menu);
         SearchView searchView = (SearchView) menu.findItem(R.id.menu_search).getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -72,18 +71,34 @@ public class RekapAbsenPesertaDetailActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextChange(String newText) {
                 newText = newText.toLowerCase();
-                ArrayList<ModelPeserta> itemFilter = new ArrayList<>();
-                for (ModelPeserta modelPeserta : data){
-                    String nama = modelPeserta.getNama().toLowerCase();
+                ArrayList<ModelKelolaUserKader> itemFilter = new ArrayList<>();
+                for (ModelKelolaUserKader modelKelolaUserKader : data){
+                    String nama = modelKelolaUserKader.getNama().toLowerCase();
+                    String telepon = modelKelolaUserKader.getNo_telepon().toLowerCase();
 
                     if (nama.contains(newText)){
-                        itemFilter.add(modelPeserta);
+                        itemFilter.add(modelKelolaUserKader);
+                    } else if (telepon.contains(newText)){
+                        itemFilter.add(modelKelolaUserKader);
                     }
                 }
-                adapterRvPeserta.setFilter(itemFilter);
+                adapterRvKelolaUserKader.setFilter(itemFilter);
                 return true;
             }
         });
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        switch (menuItem.getItemId()){
+            case R.id.menu_tambah:
+                Toast.makeText(this, "Halaman Tambah User Kader", Toast.LENGTH_SHORT).show();
+//                Intent intent = new Intent(KelolaJadwalActivity.this, TambahJadwalActivity.class);
+//                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(menuItem);
+        }
     }
 }

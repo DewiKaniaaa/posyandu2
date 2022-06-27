@@ -13,13 +13,14 @@ import android.view.ViewGroup;
 
 import com.example.posyandu.KelolaAbsenKaderActivity;
 import com.example.posyandu.KelolaJadwalActivity;
+import com.example.posyandu.KelolaUserActivity;
 import com.example.posyandu.LoginActivity;
 import com.example.posyandu.R;
 
 
 public class MenuFragment extends Fragment {
 
-    CardView cvLogout, cvKelolaAbsen, cvKelolaJadwal;
+    CardView cvLogout, cvKelolaAbsen, cvKelolaJadwal, cvKelolaUser;
     SharedPreferences sharedPreferences;
     int mode =0;
 
@@ -64,6 +65,17 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getContext(), KelolaJadwalActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+            }
+        });
+
+        cvKelolaUser = view.findViewById(R.id.cv_Kelola_user);
+        cvKelolaUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), KelolaUserActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
