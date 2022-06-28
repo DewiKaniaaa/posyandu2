@@ -68,6 +68,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_kelola_jadwal"
             android:layout_width="100dp"
             android:layout_height="150dp"
             android:layout_row="0"

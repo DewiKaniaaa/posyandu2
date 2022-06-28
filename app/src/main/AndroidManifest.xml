@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".KelolaJadwalPesertaActivity"
+            android:exported="false" />
+        <activity
             android:name=".KelolaUserKaderActivity"
             android:exported="false" />
         <activity

@@ -20,3 +20,7 @@ Catatan, Tanggal 26 Juni 2022
 
 Catatan, Tanggal 27 Juni 2022
 - Membuat halaman utama kelola user kader 
+
+Catatan, Tanggal 28 Juni 2022
+- Mengerjakan halaman jadwal untuk peserta (halaman utama, halaman lihat) sudah selesai
+- Selanjutnya mengerjakan halaman tambah, lihat edit kelola user kader
