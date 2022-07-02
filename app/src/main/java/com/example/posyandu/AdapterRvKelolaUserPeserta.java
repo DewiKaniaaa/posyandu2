@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class AdapterRvKelolaUserKader extends RecyclerView.Adapter<AdapterRvKelolaUserKader.ViewHolder> {
-    private ArrayList<ModelKelolaUserKader> dataItem;
+public class AdapterRvKelolaUserPeserta extends RecyclerView.Adapter<AdapterRvKelolaUserPeserta.ViewHolder> {
+    private ArrayList<ModelPeserta> dataItem;
     private Context context;
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -27,29 +27,29 @@ public class AdapterRvKelolaUserKader extends RecyclerView.Adapter<AdapterRvKelo
         TextView textJenisKelamin;
         TextView textNoTelepon;
         TextView textOptionsMenu;
-        LinearLayout linearLayout_item_user_kader;
+        LinearLayout linearLayout_item_kelola_user_peserta;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            textNama = itemView.findViewById(R.id.text_nama_user);
+            textNama = itemView.findViewById(R.id.text_nama_peserta);
             textNoTelepon = itemView.findViewById(R.id.text_no_telepon);
             textOptionsMenu = itemView.findViewById(R.id.text_option_menu);
-            linearLayout_item_user_kader = itemView.findViewById(R.id.ll_user_kader);
+            linearLayout_item_kelola_user_peserta = itemView.findViewById(R.id.ll_kelola_user_peserta);
         }
     }
 
-    AdapterRvKelolaUserKader(Context context, ArrayList<ModelKelolaUserKader> dataItem){
+    AdapterRvKelolaUserPeserta(Context context, ArrayList<ModelPeserta> dataItem){
         this.context = context;
         this.dataItem = dataItem;
     }
 
     @NonNull
     @Override
-    public AdapterRvKelolaUserKader.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_user_kader,parent,false);
-        return new AdapterRvKelolaUserKader.ViewHolder(view);
+    public AdapterRvKelolaUserPeserta.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_user_peserta,parent,false);
+        return new AdapterRvKelolaUserPeserta.ViewHolder(view);
     }
 
     @Override
@@ -77,7 +77,7 @@ public class AdapterRvKelolaUserKader extends RecyclerView.Adapter<AdapterRvKelo
                         switch (menuItem.getItemId()){
                             case R.id.option_lihat:
                                 Toast.makeText(context, "Lihat", Toast.LENGTH_SHORT).show();
-                                Intent intent = new Intent(context, LihatUserKaderActivity.class);
+                                Intent intent = new Intent(context, LihatUserPesertaActivity.class);
                                 intent.putExtra("NAMA", dataItem.get(position).getNama());
                                 intent.putExtra("TELEPON", dataItem.get(position).getNo_telepon());
 //                                intent.putExtra("JK", dataItem.get(position).getJenis_kelamin());
@@ -85,7 +85,7 @@ public class AdapterRvKelolaUserKader extends RecyclerView.Adapter<AdapterRvKelo
                                 return true;
                             case R.id.option_edit:
                                 Toast.makeText(context, "Edit", Toast.LENGTH_SHORT).show();
-                                Intent intent2 = new Intent(context, EditUserKaderActivity.class);
+                                Intent intent2 = new Intent(context, EditUserPesertaActivity.class);
                                 intent2.putExtra("NAMA", dataItem.get(position).getNama());
                                 intent2.putExtra("TELEPON", dataItem.get(position).getNo_telepon());
 //                                intent2.putExtra("JK", dataItem.get(position).getJenis_kelamin());
@@ -109,7 +109,7 @@ public class AdapterRvKelolaUserKader extends RecyclerView.Adapter<AdapterRvKelo
         return dataItem.size();
     }
 
-    void setFilter(ArrayList<ModelKelolaUserKader> filterModel){
+    void setFilter(ArrayList<ModelPeserta> filterModel){
         dataItem = new ArrayList<>();
         dataItem.addAll(filterModel);
         notifyDataSetChanged();

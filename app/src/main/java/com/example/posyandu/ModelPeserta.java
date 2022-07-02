@@ -6,7 +6,7 @@ public class ModelPeserta {
     String jenis_kelamin;
     String no_telepon;
 
-    public ModelPeserta(String nama, String tanggal_lahir, String jenis_kelamin, String no_telepon){
+    public ModelPeserta(String nama, String no_telepon, String jenis_kelamin, String tanggal_lahir){
         this.tanggal_lahir = tanggal_lahir;
         this.nama = nama;
         this.jenis_kelamin = jenis_kelamin;

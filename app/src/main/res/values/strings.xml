@@ -22,4 +22,10 @@
         <item>Selesai</item>
         <item>Belum Selesai</item>
     </string-array>
+
+    <string-array name="status_user">
+        <item>-- Pilih Status --</item>
+        <item>Aktif</item>
+        <item>Tidak Aktif</item>
+    </string-array>
 </resources>

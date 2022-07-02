@@ -24,3 +24,13 @@ Catatan, Tanggal 27 Juni 2022
 Catatan, Tanggal 28 Juni 2022
 - Mengerjakan halaman jadwal untuk peserta (halaman utama, halaman lihat) sudah selesai
 - Selanjutnya mengerjakan halaman tambah, lihat edit kelola user kader
+
+Catatan, Tanggal 30 Juni 2022
+- Mengerjakan halaman tambah dan lihat kelola user kader
+
+Catatan, Tanggal 1 Juli 2022
+- Mengerjakan halaman edit user kader
+
+Catatan, Tanggal 2 Juli 2022
+- Mengerjakan halaman kelola user peserta, halaman lihat, dan halaman edit
+- Selanjutnya mengerjakan halaman cek status gizi

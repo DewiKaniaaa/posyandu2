@@ -36,5 +36,13 @@ public class KelolaUserActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        cvKelolaUserPeserta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(KelolaUserActivity.this, KelolaUserPesertaActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatUserKaderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Custom.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Lihat Kader"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Nama Kader"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_nama_kader"
+                android:layout_width="wrap_content"
+                android:text="Eli Ernawati"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="No Telepon"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_no_telepon"
+                android:layout_width="wrap_content"
+                android:text="087723362157"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Jabatan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_jabatan"
+                android:layout_width="wrap_content"
+                android:text="Sekretaris"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Jenis Kelamin"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_jenis_kelamin"
+                android:layout_width="wrap_content"
+                android:text="Perempuan"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Status"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:text="Aktif"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="RT/RW"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_rt_rw"
+                android:layout_width="wrap_content"
+                android:text="011/005"/>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
