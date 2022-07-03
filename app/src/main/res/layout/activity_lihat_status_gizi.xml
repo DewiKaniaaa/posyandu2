@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatStatusGiziActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Custom.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Lihat Status Gizi"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Nama Anak"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_nama_anak"
+                android:layout_width="wrap_content"
+                android:text="Salsa"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Usia"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_usia"
+                android:layout_width="wrap_content"
+                android:text="11"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:text="Kategori Status Gizi"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_kategori_status_gizi"
+                android:layout_width="wrap_content"
+                android:text="Gizi Kurang"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

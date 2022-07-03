@@ -34,3 +34,7 @@ Catatan, Tanggal 1 Juli 2022
 Catatan, Tanggal 2 Juli 2022
 - Mengerjakan halaman kelola user peserta, halaman lihat, dan halaman edit
 - Selanjutnya mengerjakan halaman cek status gizi
+
+Catatan, Tanggal 3 Juli 2022
+- Mengerjakan halaman cek status gizi kader dan peserta
+- Selanjutnya mengerjakan halaman profil

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".LihatStatusGiziActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CekStatusGiziActivity"
+            android:exported="false" />
+        <activity
             android:name=".EditUserPesertaActivity"
             android:exported="false" />
         <activity
