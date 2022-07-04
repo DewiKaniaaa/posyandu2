@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Custom.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Profil"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Username"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_username"
+                android:layout_width="wrap_content"
+                android:text="DewiKania29"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="No Telepon"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_no_telepon"
+                android:layout_width="wrap_content"
+                android:text="091456780985"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Nama Lengkap"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_nama_lengkap"
+                android:layout_width="wrap_content"
+                android:text="Dewi Kania"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Alamat"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_alamat"
+                android:layout_width="wrap_content"
+                android:text="Jatigede"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Status"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:text="Kader/Peserta"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/table_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_edit_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Edit Password"/>
+
+        <Button
+            android:id="@+id/btn_edit_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Edit Profil"/>
+    </LinearLayout>
+
+</RelativeLayout>

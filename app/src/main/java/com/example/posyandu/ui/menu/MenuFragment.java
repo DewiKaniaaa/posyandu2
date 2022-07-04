@@ -16,12 +16,13 @@ import com.example.posyandu.KelolaAbsenKaderActivity;
 import com.example.posyandu.KelolaJadwalActivity;
 import com.example.posyandu.KelolaUserActivity;
 import com.example.posyandu.LoginActivity;
+import com.example.posyandu.ProfilActivity;
 import com.example.posyandu.R;
 
 
 public class MenuFragment extends Fragment {
 
-    CardView cvLogout, cvKelolaAbsen, cvKelolaJadwal, cvKelolaUser, cvStatusGizi;
+    CardView cvLogout, cvKelolaAbsen, cvKelolaJadwal, cvKelolaUser, cvStatusGizi, cvProfil;
     SharedPreferences sharedPreferences;
     int mode =0;
 
@@ -93,6 +94,18 @@ public class MenuFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        cvProfil = view.findViewById(R.id.cv_profil);
+        cvProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), ProfilActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+            }
+        });
         return view;
+
     }
 }

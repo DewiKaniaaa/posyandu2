@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".ProfilEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilEditPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".LihatStatusGiziActivity"
             android:exported="false" />
         <activity

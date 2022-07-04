@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 public class MenuPesertaFragment extends Fragment {
 
-    CardView cvLogout, cvKelolaAbsenPeserta, cvKelolaJadwal, cvStatusGizi;
+    CardView cvLogout, cvKelolaAbsenPeserta, cvKelolaJadwal, cvStatusGizi, cvProfil;
     SharedPreferences sharedPreferences;
     int mode =0;
 
@@ -72,6 +72,18 @@ public class MenuPesertaFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getContext(), CekStatusGiziActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+                getActivity().finish();
+            }
+        });
+
+        cvProfil = view.findViewById(R.id.cv_profil);
+        cvProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), ProfilActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);

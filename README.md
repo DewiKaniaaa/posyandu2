@@ -38,3 +38,7 @@ Catatan, Tanggal 2 Juli 2022
 Catatan, Tanggal 3 Juli 2022
 - Mengerjakan halaman cek status gizi kader dan peserta
 - Selanjutnya mengerjakan halaman profil
+
+Catatan, Tanggal 4 Juli 2022
+- Mengerjakan halaman profil kader & peserta (edit password & edit profil)
+- Selanjutnya mengerjakan halaman laporan kader
