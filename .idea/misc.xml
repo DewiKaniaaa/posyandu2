@@ -19,6 +19,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_absen_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_jadwal_peserta.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_laporan.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_user.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_user_kader.xml" value="0.2" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/activity_kelola_user_peserta.xml" value="0.20833333333333334" />
@@ -46,12 +47,14 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/fragment_menu_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_jadwal_peserta.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_laporan.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_rekap_absen.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_rekap_absen_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_user_kader.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/layout/list_item_user_peserta.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_cari_tambah.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_kelola_jadwal.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_only_search.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/posyandu2/app/src/main/res/menu/menu_rekap_absen.xml" value="0.20833333333333334" />

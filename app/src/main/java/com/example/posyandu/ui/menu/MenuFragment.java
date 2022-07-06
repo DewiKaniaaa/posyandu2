@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import com.example.posyandu.CekStatusGiziActivity;
 import com.example.posyandu.KelolaAbsenKaderActivity;
 import com.example.posyandu.KelolaJadwalActivity;
+import com.example.posyandu.KelolaLaporanActivity;
 import com.example.posyandu.KelolaUserActivity;
 import com.example.posyandu.LoginActivity;
 import com.example.posyandu.ProfilActivity;
@@ -22,7 +23,7 @@ import com.example.posyandu.R;
 
 public class MenuFragment extends Fragment {
 
-    CardView cvLogout, cvKelolaAbsen, cvKelolaJadwal, cvKelolaUser, cvStatusGizi, cvProfil;
+    CardView cvLogout, cvKelolaAbsen, cvKelolaJadwal, cvKelolaUser, cvStatusGizi, cvProfil, cvKelolaLaporan;
     SharedPreferences sharedPreferences;
     int mode =0;
 
@@ -100,6 +101,17 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getContext(), ProfilActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+            }
+        });
+
+        cvKelolaLaporan = view.findViewById(R.id.cv_kelola_laporan);
+        cvKelolaLaporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getContext(), KelolaLaporanActivity.class);
                 i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(i);
