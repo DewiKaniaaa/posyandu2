@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".LaporanLihatBayiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LaporanEditBayiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditLaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatLaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TambahLaporanActivity"
+            android:exported="false" />
+        <activity
             android:name=".KelolaLaporanActivity"
             android:exported="false" />
         <activity

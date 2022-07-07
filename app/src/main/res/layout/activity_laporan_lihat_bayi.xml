@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaporanLihatBayiActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Custom.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Lihat Bayi"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Nama Bayi"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_nama_bayi"
+                android:layout_width="wrap_content"
+                android:text="Firman"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Berat Badan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_berat_badan"
+                android:layout_width="wrap_content"
+                android:text="12"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Tinggi Badan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_tinggi_badan"
+                android:layout_width="wrap_content"
+                android:text="90"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Status Berat Badan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_status_berat_badan"
+                android:layout_width="wrap_content"
+                android:text="Baik"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Status PMT"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_status_pmt"
+                android:layout_width="wrap_content"
+                android:text="Mendapatkan PMT"/>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

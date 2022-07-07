@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LihatLaporanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Custom.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Lihat Laporan"
+            app:titleTextColor="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_layout"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Judul Laporan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_judul_laporan"
+                android:layout_width="wrap_content"
+                android:text="Laporan 1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Bulan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_bulan"
+                android:layout_width="wrap_content"
+                android:text="Januari"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Tahun"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_tahun"
+                android:layout_width="wrap_content"
+                android:text="2022"/>
+
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Keterangan"/>
+            <TextView
+                android:layout_width="10dp"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/text_keterangan"
+                android:layout_width="wrap_content"
+                android:text="Keterangan Laporan"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_laporan_list_bayi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/table_layout"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/list_item_laporan_bayi" />
+</RelativeLayout>

@@ -41,4 +41,10 @@ Catatan, Tanggal 3 Juli 2022
 
 Catatan, Tanggal 4 Juli 2022
 - Mengerjakan halaman profil kader & peserta (edit password & edit profil)
-- Selanjutnya mengerjakan halaman laporan kader
+- Selanjutnya mengerjakan halaman laporan kader 
+
+Catatan, Tanggal 6 Juli 2022
+- Mengerjakan halaman utama kelola laporan
+
+Catatan, Tanggal 7 Juli 2022
+- Mengerjakan halaman kelola laporan (lanjutan) 
