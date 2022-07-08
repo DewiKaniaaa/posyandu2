@@ -90,8 +90,8 @@ public class LihatLaporanActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem menuItem){
         switch (menuItem.getItemId()){
             case R.id.menu_tambah:
-//                Intent intent = new Intent(LihatLaporanActivity.this, TambahLaporanActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(LihatLaporanActivity.this, LaporanTambahBayiActivity.class);
+                startActivity(intent);
                 return true;
             default:
                 return super.onOptionsItemSelected(menuItem);

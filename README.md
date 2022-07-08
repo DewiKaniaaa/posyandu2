@@ -48,3 +48,7 @@ Catatan, Tanggal 6 Juli 2022
 
 Catatan, Tanggal 7 Juli 2022
 - Mengerjakan halaman kelola laporan (lanjutan) 
+
+Catatan, Tanggal 8 Juli 2022
+- Mengerjakan halaman kelola laporan sudah selesai
+- Selanjutnya mengerjakan halaman bayi&balita

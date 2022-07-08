@@ -74,19 +74,19 @@ public class AdapterRvLaporanListBayi extends RecyclerView.Adapter<AdapterRvLapo
                         switch (menuItem.getItemId()){
                             case R.id.option_lihat:
                                 Toast.makeText(context, "Lihat", Toast.LENGTH_SHORT).show();
-//                                Intent intent = new Intent(context, LihatLaporanActivity.class);
+                                Intent intent = new Intent(context, LaporanLihatBayiActivity.class);
 //                                intent.putExtra("JADWAL", dataItem.get(position).getJadwal());
 //                                intent.putExtra("TANGGAL", dataItem.get(position).getTanggal());
 //                                intent.putExtra("STATUS", dataItem.get(position).getStatus());
-//                                context.startActivity(intent);
+                                context.startActivity(intent);
                                 return true;
                             case R.id.option_edit:
                                 Toast.makeText(context, "Edit", Toast.LENGTH_SHORT).show();
-//                                Intent intent2 = new Intent(context, EditJadwalActivity.class);
+                                Intent intent2 = new Intent(context, LaporanEditBayiActivity.class);
 //                                intent2.putExtra("JADWAL", dataItem.get(position).getJadwal());
 //                                intent2.putExtra("TANGGAL", dataItem.get(position).getTanggal());
 //                                intent2.putExtra("STATUS", dataItem.get(position).getStatus());
-//                                context.startActivity(intent2);
+                                context.startActivity(intent2);
                                 return true;
                             case R.id.option_hapus:
                                 Toast.makeText(context, "Hapus", Toast.LENGTH_SHORT).show();
