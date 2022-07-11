@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Posyandu">
         <activity
+            android:name=".EditBayiBalitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LihatBayiBalitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BayiBalitaActivity"
+            android:exported="false" />
+        <activity
             android:name=".LaporanTambahBayiActivity"
             android:exported="false" />
         <activity

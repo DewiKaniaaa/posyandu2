@@ -4,12 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.bayibalita.BayiBalitaFragment"
-    android:gravity="center">
+    tools:context=".ui.bayibalita.BayiBalitaFragment">
+
+    <View
+        android:id="@+id/bg_menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_home"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bayi&amp;Balita"
-        android:textSize="30dp"/>
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Bayi &amp; Balita"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_cari_bayi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg_menu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Cari" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_bayi_balita"
+        android:layout_below="@id/et_cari_bayi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/list_item_bayi_balita" />
+
 </RelativeLayout>
